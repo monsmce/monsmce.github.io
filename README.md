@@ -7,7 +7,8 @@ Static site for GitHub Pages. No build step: what is in this folder is what goes
 | I want to change… | Open |
 |---|---|
 | Any text, link, project, job, quote, espresso card | `js/content.js` |
-| Colours and fonts | top of `css/style.css` (the `:root` and `.act2` blocks) |
+| Colours | top of `css/style.css`: `--a1` (work accent) and `--a2` (cream-act accent). Preview others with `?palette=blue`, `?palette=lime` or `?palette=violet` |
+| Fonts | `--serif` (headlines), `--brush` (Yellowtail, big calligraphy) and `--hand` (Dancing Script, notes) in `css/style.css` |
 | A photo, screenshot, certificate or the CV | put the file at the path listed in `MEDIA.md` |
 | One section's layout or animation | `js/sections/<section>.js` and its block in `css/style.css` |
 

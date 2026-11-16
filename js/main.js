@@ -14,6 +14,9 @@ import { keysSection } from './sections/keys.js';
 const root = document.documentElement;
 root.classList.toggle('plain', PLAIN);
 root.classList.toggle('dev', DEV);
+// Try colours: add ?palette=coral | blue | lime | violet to the address.
+const pal = new URLSearchParams(location.search).get('palette');
+if (pal) root.dataset.palette = pal;
 if (window.gsap) gsap.registerPlugin(ScrollTrigger);
 
 /* ------------------------------- nav ------------------------------------- */

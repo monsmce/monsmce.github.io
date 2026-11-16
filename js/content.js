@@ -31,6 +31,9 @@ export const hero = {
   intro:
     'Software Engineering student at VIA University College in Horsens, Denmark. I build full-stack systems with Java, C# and React, and I like leading the team that ships them.',
   scrollHint: 'this is just a little part of me',
+  portrait: { src: 'assets/brand/portrait.jpg', alt: '' }, // TODO: a photo of you, 3:4. Empty = coloured arch with a smiley.
+  badge: 'open to work · internship 2027 · student job · ',
+  marquee: ['Java', 'C#', 'React', 'Python', 'SQL', 'PostgreSQL', 'gRPC', 'Scrum', 'Git', '.NET', 'JavaFX', 'TypeScript (soon)'],
 };
 
 /* ------------------------------ PROJECTS --------------------------------- */
@@ -291,6 +294,7 @@ export function mediaSlots() {
   const add = (path, ratio, type, what) => s.push({ path, ratio, type, what });
   add('assets/brand/social-preview.png', '1200x630', 'image', 'Link preview image');
   add('assets/brand/favicon.png', '512x512', 'image', 'Favicon');
+  add(hero.portrait.src, '3:4, 1200x1600', 'image', 'Hero portrait in the arch frame');
   add(site.links.cv, 'PDF', 'document', 'Latest CV (required before launch)');
   for (const p of projects) {
     const d = `assets/projects/${p.slug}`;
