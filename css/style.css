@@ -187,7 +187,7 @@ button { font: inherit; color: inherit; }
 .ring-free { height: calc(100svh - var(--nav-h)); padding-top: 28px; }
 .ring-free .ring { transition: transform 1s var(--ease); }
 .ring-free .stage { cursor: grab; touch-action: pan-y; user-select: none; }
-@media (max-width: 900px) { .stage { --w: min(70vw, 46vh); } .ring-card { border-radius: 12px; } .ring-free { height: auto; overflow: visible; padding-bottom: 50px; } .ring-free .stage { height: 330px; } }
+@media (max-width: 900px) { .stage { --w: min(70vw, 46vh); } .ring-card { border-radius: 12px; } .ring-free { height: auto; overflow: clip visible; padding-bottom: 50px; } .ring-free .stage { height: 330px; } }
 
 /* ----------------------------- projects ---------------------------------- */
 .project { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(32px, 7vw, 110px); align-items: center; padding: clamp(60px, 11vh, 150px) 0; border-top: 1px solid var(--line); }
